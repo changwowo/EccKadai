@@ -1,8 +1,8 @@
 package j2kadai02;
 
 public class Monster {
-    public String name;
-    public int hp;
+    public String name = "何もないよ〜";
+    public int hp = 1;
 
 
     public void setData(String n , int h){
@@ -12,6 +12,7 @@ public class Monster {
 
     }
     public void showData(){
+
         System.out.println("ぼくの名前は"+name+"！HP は"+hp+" だよ！」");
     }
     public void walk(){

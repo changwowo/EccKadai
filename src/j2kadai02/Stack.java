@@ -16,13 +16,13 @@ public class Stack {
         return i -= 1;
     }
     public int getData(int i){
-        return st[i];
+        return st[i-0];
     }
     public int size(){
         return st.length;
     }
     public boolean isEmpty(){
-        if(i < 0) return true;
+        if(i <= 0) return true;
         else return false;
     }
     public boolean isFull(){
