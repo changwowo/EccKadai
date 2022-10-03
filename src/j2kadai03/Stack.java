@@ -5,9 +5,9 @@ public class Stack {
     public int i = 0;
 
     public String indent(int j){
-        String indent = " ";
+        String indent = "\t";
         for(int k =0; k<j;k++){
-            indent += " ";
+            indent += "\t";
         }
         return indent;
     }

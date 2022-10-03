@@ -6,5 +6,6 @@ public class J2Kad04C {
 
         Sheep count;
 
+
     }
 }

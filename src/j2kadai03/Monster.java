@@ -17,7 +17,7 @@ public class Monster {
     public void setHp(int hp){
         if(hp <= 0){
             System.out.println("せめてHP、1はちょうだい!");
-            this.hp =1;
+            this.hp = 1;
         }else {
             this.hp = hp;
         }
