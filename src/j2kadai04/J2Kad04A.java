@@ -14,5 +14,6 @@ public class J2Kad04A {
         Card c9 = new Card();
         Card c10 = new Card();
 
+
     }
 }

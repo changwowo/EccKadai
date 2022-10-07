@@ -13,28 +13,17 @@ public class Card {
         while(true) {
             int num = r.nextInt(10);
             number[i] = num;
-            if (t[number[i]]){
-                continue;
-            }
-                t[number[i]] = true;
+            if (t[number[i]])continue;
+            t[number[i]] = true;
             break;
         }
-
         System.out.println("カードの番号は"+getNumber()+"です!");
         i ++;
-
     }
-    int getNumber(){
+    static int getNumber(){
         return number[i];
     }
 
+
 }
 
-
-/*
-                int tmp = cards[dst];
-				cards[dst] = cards[src];
-				cards[src] = tmp;
-				System.out.println(dst + "番目と" + src + "番目を入れ替えました!");
-				dst++;
- */
