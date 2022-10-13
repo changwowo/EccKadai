@@ -12,7 +12,6 @@ public class SwimMonster extends Monster{
         }
 
     }
-
     @Override
     public void walk() {
         System.out.println("尾びれだと歩けないよ~");

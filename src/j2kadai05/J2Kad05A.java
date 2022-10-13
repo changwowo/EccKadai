@@ -15,38 +15,38 @@ public class J2Kad05A {
 
         // 初期設定
         int	stone = 20;			// 石の数
-        System.out.print("あなたの名前を入力してください＞");
-        String userName = in.next();
-        String compName = "CPU";
+        UserPlayer userPlayer = new UserPlayer();
+        CompPlayer compPlayer = new CompPlayer();
         System.out.println();
 
-        System.out.println("名前：" + userName + "・・・あなたが操作するプレイヤーです。");
-        System.out.println("名前：" + compName + "・・・取る石の数を乱数で決めます。");
+        System.out.println("名前：" + userPlayer.getName() + "・・・あなたが操作するプレイヤーです。");
+        System.out.println("名前：" + compPlayer.getName() + "・・・取る石の数を乱数で決めます。");
         System.out.println();
 
         int take;				// 取る石の数
         while(true) {
             // あなたの手番
             showStone(stone);
-            System.out.println(userName + "の番です。");
+            System.out.println(userPlayer.getName() + "の番です。");
             System.out.print("何個取りますか？（1-3）＞");
-            take = in.nextInt();
-            System.out.println(take + "個取りました！");
+            take = userPlayer.takeStone(stone);
             stone -= take;
+            System.out.println(take+ "個取りました！");
             if (stone <= 0) {
-                System.out.println(userName + "の負けです！");
+                System.out.println(userPlayer.getName() + "の負けです！");
                 break;								// while文を抜ける
             }
             System.out.println();
 
             // CPUの手番
             showStone(stone);
-            System.out.println(compName + "の番です。");
-            take = (int)(Math.random() * 3) + 1;
-            System.out.println(take + "個取りました！");
+            System.out.println(compPlayer.getName() + "の番です。");
+
+            take = compPlayer.takeStone(stone);
             stone -= take;
+            System.out.println(take + "個取りました！");
             if (stone <= 0) {
-                System.out.println(compName + "の負けです！");
+                System.out.println(compPlayer.getName() + "の負けです！");
                 break;								// while文を抜ける
             }
             System.out.println();

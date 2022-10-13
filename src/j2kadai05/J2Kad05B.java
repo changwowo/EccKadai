@@ -11,18 +11,24 @@ public class J2Kad05B {
         System.out.println();
 
         // BasePlayerの生成
+        BasePlayer basePlayer = new BasePlayer();
+        basePlayer.intro();
+
 
 
 
         System.out.println();
 
         // UserPlayerの生成
+        UserPlayer userPlayer = new UserPlayer();
+        userPlayer.intro();
 
 
 
         System.out.println();
 
         // BasePlayer VS UserPlayer
+        System.out.println(basePlayer.getName()+" と "+userPlayer.getName()+" が戦います!");
 
 
     }

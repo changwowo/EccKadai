@@ -21,6 +21,7 @@ public class J2Kad05C {
                 case 0: m.intro();  break;
                 case 1: m.walk();   break;
                 case 2: m.sleep();  break;
+                case 3: m.swim();   break;
             }
             System.out.println();
         }
