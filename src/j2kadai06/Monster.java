@@ -3,6 +3,7 @@ package j2kadai06;
 public class Monster {
 //    private String name;
     protected String name;
+
     public Monster(String name) {
         this.name = name;
     }

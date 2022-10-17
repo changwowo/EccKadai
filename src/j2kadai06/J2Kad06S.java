@@ -34,10 +34,11 @@ public class J2Kad06S {
         System.out.println();
         int take;   // 取る石の数
         int i = 0;   //先頭と後手確認するやつ
+
         while(true) {
             // 先手の手番
             showStone(stone);
-            System.out.println("先手：" + basePlayers1.get(i).toString() + "の番です。");
+            System.out.println((i==0)?"先手：" + basePlayers1.get(i).toString() + "の番です。":"後手:" + basePlayers1.get(i).toString() + "の番です。");
             take = basePlayers1.get(i).takeStone(stone);
             System.out.println(take + "個取りました！");
             stone -= take;
@@ -47,6 +48,7 @@ public class J2Kad06S {
             }
             System.out.println();
             if(i == 0) i ++; else i--; // 先、後交代
+
         }
     }
     public static void showStone(int stone) {
