@@ -16,7 +16,8 @@ public class J2Kad06S {
         // 初期設定
         int	stone = 20;			// 石の数
 
-        BasePlayer[] basePlayers = {new BasePlayer(), new BasePlayer() , new CompPlayer() , new MasterPlayer()};
+        BasePlayer[] basePlayers = {new BasePlayer(), null , new CompPlayer() , new MasterPlayer()};
+
         ArrayList<BasePlayer> basePlayers1 = new ArrayList<>();
 
         System.out.println();
@@ -38,12 +39,12 @@ public class J2Kad06S {
         while(true) {
             // 先手の手番
             showStone(stone);
-            System.out.println((i==0)?"先手：" + basePlayers1.get(i).toString() + "の番です。":"後手:" + basePlayers1.get(i).toString() + "の番です。");
+            System.out.println((i==0)?"先手：" + basePlayers1.get(i) + "の番です。":"後手:" + basePlayers1.get(i) + "の番です。");
             take = basePlayers1.get(i).takeStone(stone);
             System.out.println(take + "個取りました！");
             stone -= take;
             if (stone <= 0) {
-                System.out.println(basePlayers1.get(i).toString() + "の負けです！");
+                System.out.println(basePlayers1.get(i) + "の負けです！");
                 break;								// while文を抜ける
             }
             System.out.println();

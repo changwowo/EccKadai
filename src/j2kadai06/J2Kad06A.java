@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class J2Kad06A {
     public static void main(String[] args) {
-        Fairy[] fairies = new Fairy[3];
+
         ArrayList<Fairy> fairyArrayList= new ArrayList<>();
         Fairy f0;
         Fairy f2;
@@ -17,10 +17,6 @@ public class J2Kad06A {
         fairyArrayList.add(f1 = new Darkness());
         fairyArrayList.add(f2 = new Fire());
 
-
-//        fairies[0] = f0;
-//        fairies[1] = f1;
-//        fairies[2] = f2;
         int cho;
         Scanner sc = new Scanner(System.in);
         System.out.println("妖精を召喚して自己紹介させます！");
