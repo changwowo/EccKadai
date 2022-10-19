@@ -6,7 +6,7 @@ public abstract class RPGCharacter {
 
     public abstract void defend();
 
-    public abstract void steal();
+    public void steal(){}
 
     public void userItem(){
         System.out.println("何かのアイテムを使います!");

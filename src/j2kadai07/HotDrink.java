@@ -4,7 +4,7 @@ public abstract class HotDrink {
 
 
     public abstract  void makeDrink();
-    public abstract void hatsu();
+    public void hatsu(){}
     public final void boilWater(){
         System.out.println("お湯を沸かしました！");
     }

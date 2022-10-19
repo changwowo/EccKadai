@@ -8,8 +8,4 @@ public class Monk extends RPGCharacter{
         System.out.println("素手で防御します!");
     }
 
-    @Override
-    public void steal() {
-
-    }
 }

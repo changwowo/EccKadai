@@ -6,6 +6,4 @@ public class Cocoa extends HotDrink{
         System.out.println("ココアパウダーを入れる");
     }
 
-    @Override
-    public void hatsu() {}
 }
