@@ -12,6 +12,6 @@ public class Thief extends RPGCharacter{
     }
 
     public void steal(){
-        System.out.println("何かを盗みます!");
+        System.out.println("何かを盗みます!"); //  ThiefのMeyhod
     }
 }

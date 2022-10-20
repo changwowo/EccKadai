@@ -5,9 +5,8 @@ public class Yuzu extends HotDrink{
     public void makeDrink() {
         System.out.println("ゆずジャムを入れる");
     }
-
     @Override
-    public void hatsu() {
+    public void honey() {
         System.out.println("はちみつを加える");
     }
 }
