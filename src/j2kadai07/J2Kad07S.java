@@ -3,12 +3,14 @@ package j2kadai07;/*
 	作成日：2022/10/20
 	作成者：田中太郎
 */
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class J2Kad07S {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         HotDrink[] hotDrinks = {new Coffee() , new Tea() , new Cocoa() , new Yuzu()};
+
         System.out.println("ECCコーヒーへようこそ！");
         System.out.println("門外不出のレシピで作るから、おいしいよ！！");
         System.out.println();

@@ -4,13 +4,11 @@ public abstract class HotDrink {
 
 
     public abstract  void makeDrink();
-    public void honey(){}
+    public void honey(){} //フック
 
 
     // 全てのmethodで使う文字列なのでここでMethodをで異議して無駄を消す
-    public final void boilWater(){
-        System.out.println("お湯を沸かしました！");
-    }
+    public void boilWater(){System.out.println("お湯を沸かしました！");}
 
     public final void pourInCup(){
         System.out.println("カップに注ぎました！");
